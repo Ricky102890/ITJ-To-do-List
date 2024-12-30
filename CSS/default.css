@@ -42,7 +42,6 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    background: pink;
     gap: 40px;
 }
 a {
