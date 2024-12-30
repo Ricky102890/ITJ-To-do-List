@@ -16,7 +16,29 @@
             <h1>Agenda.Cloud</h1>
             <h2>Managing your tasks, from the Cloud</h2>
             <span>Get Started Offline</span>
-            <span><a href="#">Sign Up</a> - Use of the Cloud</span>
+            <div class="signup">
+                <button class="expand-btn" id="signupbtnExpand">Sign Up</button>
+                <span>Access to Cloud features & more...</span>
+                <div class="signup-form-wrapper">
+                    <form method="post">
+                        <div class="signup-details">
+                            <h3>Welcome to Agenda.Cloud</h3>
+                            <p>Free Account with access to all features</p>
+                        </div>
+                        <div class="info">
+                            <input type="text" placeholder="First Name">
+                            <br>
+                            <input type="text" placeholder="Last Name">
+                            <br>
+                            <input type="email" placeholder="Email">
+                            <br>
+                            <input type="text" placeholder="Confirm Email Address">
+                            <br>
+                            <button class="submit-btn" id="signupSubmitBtn">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
         <div class="input-wrapper">
             <h3>Current Agenda</h3>
@@ -32,18 +54,18 @@
                 <button class="action-btn" id="#"><img src="#" alt="Action Button ?" aria-label="Action Button ?"></button>
                 <button class="action-btn" id="#"><img src="#" alt="Action Button ?" aria-label="Action Button ?"></button>
             </div>
-            <div class="output">
-                <div class="output-item">
-                    <span class="output-text">Output</span>
-                    <div class="output-actions">
-                        <button class="output-action-btn" id="#">EDIT <span><img src="#" alt="Action Btn ?"></span></button>
-                        <button class="output-action-btn" id="#">CLONE <span><img src="#" alt="Action Btn ?"></span></button>
-                        <button class="output-action-btn" id="#">DEL <span><img src="#" alt="Action Btn ?"></span></button>
-                        <button class="output-action-btn" id="#">UP <span><img src="#" alt="Action Btn ?"></span></button>
-                        <button class="output-action-btn" id="#">DOWN <span><img src="#" alt="Action Btn ?"></span></button>
-                    </div>
-                </div>
-            </div>
+            <ul class="output">
+                <li class="output-item">
+                    <input class="output-text" readonly>
+                    <ul class="output-actions">
+                        <li><button class="output-action-btn" id="#">EDIT <span><img src="#" alt="Action Btn ?"></span></button></li>
+                        <li><button class="output-action-btn" id="#">CLONE <span><img src="#" alt="Action Btn ?"></span></button></li>
+                        <li><button class="output-action-btn" id="#">DEL <span><img src="#" alt="Action Btn ?"></span></button></li>
+                        <li><button class="output-action-btn" id="#">UP <span><img src="#" alt="Action Btn ?"></span></button></li>
+                        <li><button class="output-action-btn" id="#">DOWN <span><img src="#" alt="Action Btn ?"></span></button></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
 </body>
