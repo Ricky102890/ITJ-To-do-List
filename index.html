@@ -11,6 +11,40 @@
     <script src="/JS/script.js" defer></script>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="intro">
+            <h1>Agenda.Cloud</h1>
+            <h2>Managing your tasks, from the Cloud</h2>
+            <span>Get Started Offline</span>
+            <span><a href="#">Sign Up</a> - Use of the Cloud</span>
+        </div>
+        <div class="input-wrapper">
+            <h3>Current Agenda</h3>
+            <div class="input-section">
+                <input type="text" pattern="/[a-z][A-Z][0-9]/gi"aria-label="Task Input" maxlength="25" class="input" id="agendaInput">
+                <button class="submit-btn" id="submitBtn">Add Agenda<span><img src="#" alt="Add Icon"></span></button>
+            </div>
+        </div>
+        <div class="output-wrapper">
+            <div class="action-wrapper">
+                <button class="action-btn" id="#"><img src="#" alt="Action Button ?" aria-label="Action Button ?"></button>
+                <button class="action-btn" id="#"><img src="#" alt="Action Button ?" aria-label="Action Button ?"></button>
+                <button class="action-btn" id="#"><img src="#" alt="Action Button ?" aria-label="Action Button ?"></button>
+                <button class="action-btn" id="#"><img src="#" alt="Action Button ?" aria-label="Action Button ?"></button>
+            </div>
+            <div class="output">
+                <div class="output-item">
+                    <span class="output-text">Output</span>
+                    <div class="output-actions">
+                        <button class="output-action-btn" id="#">EDIT <span><img src="#" alt="Action Btn ?"></span></button>
+                        <button class="output-action-btn" id="#">CLONE <span><img src="#" alt="Action Btn ?"></span></button>
+                        <button class="output-action-btn" id="#">DEL <span><img src="#" alt="Action Btn ?"></span></button>
+                        <button class="output-action-btn" id="#">UP <span><img src="#" alt="Action Btn ?"></span></button>
+                        <button class="output-action-btn" id="#">DOWN <span><img src="#" alt="Action Btn ?"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
