@@ -11,26 +11,34 @@
     <script src="/JS/script.js" defer></script>
 </head>
 <body>
+    <header>
+        <ul class="navbar">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="account-success.html">ACCOUNT</a></li>
+            <li><a href="#">CLOUD ACCESS</a></li>
+            <li><a href="#">ABOUT US</a></li>
+        </ul>
+    </header>
     <div class="container">
         <div class="intro">
             <h1>Agenda.Cloud</h1>
             <h2>Managing your tasks, from the Cloud</h2>
             <span>Get Started Offline</span>
             <div class="signup">
-                <button class="expand-btn" id="signupbtnExpand">Sign Up</button>
+                <button class="expand-btn" id="signupBtnExpand">Sign Up</button>
                 <span>Access to Cloud features & more...</span>
-                <div class="signup-form-wrapper">
+                <div class="signup-form-wrapper" id="signupForm">
                     <form method="post">
                         <div class="signup-details">
-                            <h3>Welcome to Agenda.Cloud</h3>
-                            <p>Free Account with access to all features</p>
+                            <h3>Agenda.Cloud Account</h3>
+                            <p>Sign up with access to all cloud features</p>
                         </div>
                         <div class="info">
-                            <input type="text" placeholder="First Name">
+                            <input type="text" placeholder="First Name" id="acctFName">
                             <br>
-                            <input type="text" placeholder="Last Name">
+                            <input type="text" placeholder="Last Name" id="acctLName">
                             <br>
-                            <input type="email" placeholder="Email">
+                            <input type="email" placeholder="Email" id="acctEmail">
                             <br>
                             <input type="text" placeholder="Confirm Email Address">
                             <br>
@@ -38,9 +46,10 @@
                                 <input type="checkbox" id="terms">
                                 <label for="terms" id="termsLabel">Agree to <a href="#">Terms & Conditions</a></label>
                             </div>
-                            
-                            <br>
-                            <button class="submit-btn" id="signupSubmitBtn">Sign Up</button>
+                            <button class="submit-btn" id="signupSubmitBtn" type="button">Sign Up</button>
+                            <div class="loading-wrapper" id="loadingWrapper">
+                                <img src="/MEDIA/loading-rays.png" alt="Loading Bar" class="loading-icon">
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -50,7 +59,7 @@
             <h3>Current Agenda <button><img src="#" alt="Cloud"></button></h3>
             <div class="input-section">
                 <input type="text" pattern="/[a-z][A-Z][0-9]/gi"aria-label="Task Input" maxlength="25" class="input" id="agendaInput">
-                <button class="submit-btn" id="submitBtn">Add Agenda<span><img src="#" alt="Add Icon"></span></button>
+                <button class="submit-btn" id="submitBtn" onclick="addItem()">Add Agenda<span><img src="#" alt="Add Icon"></span></button>
             </div>
         </div>
         <div class="output-wrapper">
@@ -62,7 +71,7 @@
             </div>
             <ul class="output">
                 <li class="output-item">
-                    <input class="output-text" readonly>
+                    <input class="output-text" readonly required>
                     <ul class="output-actions">
                         <li><button class="output-action-btn" id="#">EDIT <span><img src="#" alt="Action Btn ?"></span></button></li>
                         <li><button class="output-action-btn" id="#">CLONE <span><img src="#" alt="Action Btn ?"></span></button></li>
