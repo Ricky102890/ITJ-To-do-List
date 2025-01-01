@@ -29,6 +29,7 @@ body {
     background-position: top;
     color: white;
     font-family: 'Tech', sans-serif;
+    position: relative;
 }
 
 .container {
