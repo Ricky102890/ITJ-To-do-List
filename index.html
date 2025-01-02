@@ -21,12 +21,14 @@
     </header>
     <div class="container">
         <div class="intro">
-            <h1>Agenda.Cloud</h1>
+            <h1>Agenda.Cloud <span><img src="/MEDIA/io-icon.svg" alt="IO Icon"></span></h1>
             <h2>Managing your tasks, from the Cloud</h2>
             <span>Get Started Offline</span>
             <div class="signup">
-                <button class="expand-btn" id="signupBtnExpand">Sign Up</button>
-                <span>Access to Cloud features & more...</span>
+                <div class="signup-wrapper">
+                    <button class="expand-btn" id="signupBtnExpand">Sign Up</button>
+                    <span id="featDesc">Access to Cloud features & more...</span>
+                </div>
                 <div class="signup-form-wrapper" id="signupForm">
                     <form method="post">
                         <div class="signup-details">
@@ -56,18 +58,17 @@
             </div>
         </div>
         <div class="input-wrapper">
-            <h3>Current Agenda <button><img src="#" alt="Cloud"></button></h3>
+            <h3>Current Agenda <button><img src="/MEDIA/io-icon.svg" alt="Cloud"></button></h3>
             <div class="input-section">
                 <input type="text" pattern="/[a-z][A-Z][0-9]/gi"aria-label="Task Input" maxlength="25" class="input" id="agendaInput">
-                <button class="submit-btn" id="submitBtn" onclick="addItem()">Add Agenda<span><img src="#" alt="Add Icon"></span></button>
+                <button class="input-btn" id="submitBtn" onclick="addItem()"><span><img src="/MEDIA/add-icon.png" alt="Add Icon"></span></button>
             </div>
         </div>
         <div class="output-wrapper">
             <div class="action-wrapper">
-                <button class="action-btn" id="#"><img src="#" alt="Action Button ?" aria-label="Action Button ?"></button>
-                <button class="action-btn" id="#"><img src="#" alt="Action Button ?" aria-label="Action Button ?"></button>
-                <button class="action-btn" id="#"><img src="#" alt="Action Button ?" aria-label="Action Button ?"></button>
-                <button class="action-btn" id="#"><img src="#" alt="Action Button ?" aria-label="Action Button ?"></button>
+                <button class="action-btn" id="#"><img src="/MEDIA/del.svg" alt="Action Button Delete Recent" aria-label="Action Button ?"></button>
+                <button class="action-btn" id="#"><img src="/MEDIA/delAll.svg" alt="Action Button Delete All" aria-label="Action Button ?"></button>
+                <button class="action-btn" id="#"><img src="/MEDIA/orderList.svg" alt="Action Button Alphabet Ordering" aria-label="Action Button ?"></button>
             </div>
             <ul class="output">
                 <li class="output-item">
